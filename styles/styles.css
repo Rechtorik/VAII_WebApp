@@ -25,9 +25,9 @@ p.user::before {
 .blog-content p {
     display: -webkit-box;            /* Vytvorenie flexbox kontajnera */
     -webkit-box-orient: vertical;   /* Nastavenie orientácie na vertikálnu */
-    -webkit-line-clamp: 3;          /* Obmedzenie na 3 riadky */
-    overflow: hidden;                /* Skrytie pretečeného textu */
-    text-overflow: ellipsis;        /* Pridanie "..." na konci, ak je text dlhší */
+    -webkit-line-clamp: 3;          /* Obmedzenie na 3 riadky  -KÓD OD CHATGPT*/
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .blog-whoposted-img {
@@ -40,8 +40,8 @@ p.user::before {
     text-align: justify;
 }
 .add-blog-li-inactive {
-    color: gray; /* Zmení farbu textu */
-    pointer-events: none; /* Zakaže akúkoľvek interakciu s týmto prvkom */
+    color: gray; 
+    pointer-events: none;
 }
 
 
@@ -51,5 +51,8 @@ p.user::before {
     }
     .container-header {
         padding: 0em 2em 1em 2em;
+    }
+    .add-blog-form h2 {
+        text-align: center;
     }
 }
