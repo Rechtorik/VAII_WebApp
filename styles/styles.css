@@ -5,15 +5,16 @@ body {
 }
 
 .container-header {
-    margin-top: 1em;
+    position: sticky;
+    top: 0;
+    background-color: #EEEEEEFF;
+    width: 100%;
+    padding: 0.5em 5em;
+    z-index: 1;
 }
 
 .blog-name a {
     text-decoration: none;
-}
-
-p.user {
-    
 }
 
 p.user::before {
@@ -29,7 +30,7 @@ p.user::before {
     text-overflow: ellipsis;        /* Pridanie "..." na konci, ak je text dlhší */
 }
 
-.blog-whoposted {
+.blog-whoposted-img {
     padding: 3em;
     height: 100%;
     aspect-ratio: 1 / 1;
@@ -37,4 +38,18 @@ p.user::before {
 
 .blog-body {
     text-align: justify;
+}
+.add-blog-li-inactive {
+    color: gray; /* Zmení farbu textu */
+    pointer-events: none; /* Zakaže akúkoľvek interakciu s týmto prvkom */
+}
+
+
+@media (max-width: 768px) {  /* Pre mobilné zariadenia */
+    .blog-whoposted-img {
+        display: none;
+    }
+    .container-header {
+        padding: 0em 2em 1em 2em;
+    }
 }
