@@ -28,3 +28,13 @@ p.user::before {
     overflow: hidden;                /* Skrytie pretečeného textu */
     text-overflow: ellipsis;        /* Pridanie "..." na konci, ak je text dlhší */
 }
+
+.blog-whoposted {
+    padding: 3em;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.blog-body {
+    text-align: justify;
+}
